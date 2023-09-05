@@ -42,7 +42,7 @@ const TEMPLATE_CONFIG = [
       
       ---
 
-       每日一句(英）：{{wx_note_en_0.DATA}} {{wx_note_en_1.DATA}} {{wx_note_en_3.DATA}} {{wx_note_en_4.DATA}} {{wx_note_en_5.DATA}}
+       每日一句(英）：{{wx_note_en_0.DATA}}{{wx_note_en_1.DATA}}{{wx_note_en_2.DATA}}{{wx_note_en_3.DATA}}{{wx_note_en_4.DATA}}{{wx_note_en_5.DATA}}
 
       每日一句（中）：{{wx_note_ch_0.DATA}}{{wx_note_ch_1.DATA}}{{wx_note_ch_3.DATA}}{{wx_note_ch_4.DATA}}
       
