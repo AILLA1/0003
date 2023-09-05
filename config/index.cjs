@@ -7,6 +7,8 @@
  */
 const USER_CONFIG = {
 
+  USE_PASSAGE: 'push-plus',
+
   // 使用微信测试号：公众号APP_ID
   APP_ID: '',
 
@@ -14,42 +16,103 @@ const USER_CONFIG = {
   APP_SECRET: '',
 
   PROVINCE: '广东',
-  CITY: '惠州',
+  CITY: '白云',
 
   USERS: [
     {
       // 想要发送的人的名字
-      name: '宝贝',
+      name: 'LL同学',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: '2eb4c08621104002a23e6b635013af3e',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      useTemplateId: '0001',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
+      horoscopeDate: '08-19',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
+          type: '*生日', name: 'YY', year: '2004', date: '09-11',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '*生日', name: 'LL', year: '2004', date: '07-04',
         },
         {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+          type: '纪念日', name: '恋爱纪念日', year: '2022', date: '01-01',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
+        { keyword: 'love_day', date: '2022-01-01' },
       ],
     },
   ],
+  
+  SWITCH: {
+    /** 每日天气 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: true,
 
+    /** 节假日 */
+    // 下一休息日综合提醒, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    holidaytts: true,
 
+    /** 每日N句 */
+    // 金山每日一句, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    CIBA: true,
+    
+    // 每日一言, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    oneTalk: true,
+    
+    // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    earthyLoveWords: true,
+    
+    // 朋友圈文案, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    momentCopyrighting: false,
+    
+    // 毒鸡汤, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poisonChickenSoup: false,
+    
+    // 古诗古文, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poetry: true,
+
+    /** 星座运势 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    horoscope: true,
+  
+    /** 生日消息和节日消息 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    birthdayMessage: true,
+  
+    /** 学生课表 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    courseSchedule: false,
+  },
+  
+  TIAN_API: {
+    // 天行API KEY，如果使用天行API则需要填写此项
+    key: '8ab5ea3de3a982eccbd6142774750f14',
+    
+    /** 天行API相关，需要config中配置 TIAN_API_KEY  */
+    // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    morningGreeting: true,
+  
+    // 晚安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    eveningGreeting: true,
+  
+    // 天行天气（展示未来N天，最多7天）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: 3,
+  
+    // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    networkHot: 3,
+  
+    // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
+    networkHotType: 'default',
+  
+  },
+
+    
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
   CALLBACK_TEMPLATE_ID: '',
 
@@ -64,4 +127,3 @@ const USER_CONFIG = {
 }
 
 module.exports = USER_CONFIG
-
