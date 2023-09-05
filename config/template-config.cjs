@@ -51,6 +51,8 @@ const TEMPLATE_CONFIG = [
       
      每日古诗： {{poetry_title.DATA}}   
       {{poetry_content.DATA}}
+
+     全国热搜：{{tian_api_network_hot.DATA}}
     `
   },
   {
