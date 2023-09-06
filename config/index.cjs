@@ -56,7 +56,7 @@ const USER_CONFIG = {
   
     /** 学生课表 */
     // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
-    courseSchedule: false,
+    courseSchedule: true,
   },
   
   TIAN_API: {
