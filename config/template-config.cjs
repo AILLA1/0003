@@ -28,7 +28,7 @@ const TEMPLATE_CONFIG = [
 
       紫外线强度☄️：{{tian_api_weather_uv_index_0.DATA}}
 
-      湿度💦：{{tian_api_weather_humidity_0.DATA}}
+      湿度💦：{{tian_api_weather_humidity_0.DATA}}%
 
       生活指示🌈：{{tian_api_weather_tips_0.DATA}}
       
@@ -51,6 +51,8 @@ const TEMPLATE_CONFIG = [
       
      每日古诗： {{poetry_title.DATA}}   
       {{poetry_content.DATA}}
+
+      今日课程：{{course_schedule.DATA}}
 
      全国热搜：{{tian_api_network_hot.DATA}}
     `
