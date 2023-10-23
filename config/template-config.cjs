@@ -46,10 +46,8 @@ const TEMPLATE_CONFIG = [
 
       每日一句（中）：{{wx_note_ch_0.DATA}}{{wx_note_ch_1.DATA}}{{wx_note_ch_3.DATA}}{{wx_note_ch_4.DATA}}
       
-      每日情话：{{wx_earthy_love_words_0.DATA}}
-
-      
-     每日古诗： {{poetry_title.DATA}}   
+      每日情话：{{wx_earthy_love_words_0.DATA}}{{wx_earthy_love_words_1.DATA}}{{wx_earthy_love_words_2.DATA}}
+      每日古诗： {{poetry_title.DATA}}   
       {{poetry_content.DATA}}
 
       今日课程：{{course_schedule.DATA}}
